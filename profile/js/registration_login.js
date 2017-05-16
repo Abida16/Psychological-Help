@@ -44,9 +44,9 @@ function loadvalue() {
             if (this.readyState == 4 && this.status == 200) {
 
                 response = xhttp.responseText
-                var res = JSON.parse(response);
-                var flag = res['flag'];
-                if(flag==0)
+               // var res = JSON.parse(response);
+                //var flag = res['flag'];
+                if(response==0)
                 {
                     // alert(res['msg']);
                     alert("registration failed. register with new email id");

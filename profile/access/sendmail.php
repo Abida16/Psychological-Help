@@ -36,10 +36,8 @@
     $result = $mailer->send($message);
         if ($result) {
             $success = "Thank you for your interest.A verification mail is sent to your mail account. Please verify it to login to your account";
-            $flag=1;
-            $arr=array('flag'=>$flag,'msg'=> $success );
-            $json = json_encode($arr);
-            echo $json;
+
+            echo $success;
         }
         else
             echo "ERROR";

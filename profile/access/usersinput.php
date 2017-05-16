@@ -146,9 +146,10 @@ if($var=="register")
 
 
 
-    $arr=array('flag'=>$flag,'msg'=> $success );
-    $json = json_encode($arr);
-    echo $json;
+   // $arr=array('flag'=>$flag,'msg'=> $success );
+   // $json = json_encode($arr);
+    //echo $json;
+    echo $flag;
 
 
 
