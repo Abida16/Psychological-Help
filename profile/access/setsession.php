@@ -6,7 +6,7 @@ session_start();
     $_SESSION["lname"] = $_GET['lname'];
     $_SESSION["email"] = $_GET['email'];
     $_SESSION["admin"] = $_GET['admin'];
-$flag = 1;
+
 $success="Succesfully logged in";
 $arr = array('flag' => 1, 'fname' =>$_GET['fname'], 'lname' => $_GET['lname'], 'admin' => $_GET['admin'],'msg' =>$success);
 $json = json_encode($arr);

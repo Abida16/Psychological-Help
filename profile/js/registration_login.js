@@ -124,7 +124,7 @@ function validate() {
                 }
             }
         };
-        xhttp.open("GET", "/psychohelp/profile/access/usersinput.php?email=" + email + "&pass="+password+"&var="+req, true);
+        xhttp.open("GET", "/psychohelp/profile/access/usersinput.php?email=" + email + "&pass="+password+"&var="+req, false);
         xhttp.send();
 
     }

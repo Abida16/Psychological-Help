@@ -20,7 +20,7 @@ if($var=="login")
   //  require_once('../mysqli_connect.php');
     $query = "SELECT fname,lname,email,password,admin,verified FROM user_info";
     $response = @mysqli_query($dbc, $query);
-    $flag = 0;
+    $flag = 1;
     $verify = 2;
     while($row=mysqli_fetch_array($response))
     {
@@ -29,19 +29,20 @@ if($var=="login")
         {
             if($row["verified"]==1) {
 
-
+                $flag=0;
                 header("/psychohelp/profile/access/setsession.php?fname=".$row["fname"]."&lname=".$row["lname"]."&email=".$row["email"]."&admin=".$row["admin"]);
 
                 break;
             }
-            else{ //not verified
+            else{
+                //not verified
                 $verify = $row["verified"]; // 0
 
             }
         }
 
     }
-    if($flag==0)
+    if($flag!=0)
     {
         if($verify == 2 ){ //doesn't exist
             $arr = array('flag' => 0, 'msg' => "invalid email or password");
