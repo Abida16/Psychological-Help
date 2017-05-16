@@ -72,7 +72,7 @@ function loadvalue() {
 
             }
         };
-        xhttp.open("GET", "/psychohelp/profile/access/usersinput.php?data=" + data + "&dbname=user_info"+"&var="+req, true);
+        xhttp.open("GET", "/psychohelp/profile/access/usersinput.php?data=" + data + "&dbname=user_info"+"&var="+req, false);
         xhttp.send();
 
 
