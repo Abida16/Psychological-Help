@@ -50,7 +50,7 @@ function loadvalue() {
                 {
                     // alert(res['msg']);
                     alert("registration failed. register with new email id");
-                    window.location = "/psychohelp/profile/index.php";
+                   // window.location = "/psychohelp/profile/index.php";
 
 
                 }
