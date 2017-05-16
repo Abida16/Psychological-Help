@@ -132,26 +132,20 @@ if($var=="register")
 
         $success = "Thank you for your interest.A verification mail is sent to your mail account. Please verify it to login to your account";
         $flag=1;
-        $arr=array('flag'=>$flag,'msg'=> $success );
-        $json = json_encode($arr);
-       // echo $json;
-        header("Location: /psychohelp/profile/access/sendmail.php?email=".$data[3]."&name=".$data[1]."&msg=".$success);
+        header("Location: /psychohelp/profile/access/sendmail.php?email=".$data[3]."&name=".$data[1]);
 
     }
 
     else {
         $flag=0;
         $success = "registration failed. register with new email id";
-        $arr=array('flag'=>$flag,'msg'=> $success );
-        $json = json_encode($arr);
-        echo $json;
     }
 
 
 
- /*   $arr=array('flag'=>$flag,'msg'=> $success );
+    $arr=array('flag'=>$flag,'msg'=> $success );
     $json = json_encode($arr);
-    echo $json;*/
+    echo $json;
 
 
 

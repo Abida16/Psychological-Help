@@ -56,7 +56,7 @@ function loadvalue() {
                 }
                 else
                 {
-                    alert("successmmmmmm");
+                    alert( "Thank you for your interest.A verification mail is sent to your mail account. Please verify it to login to your account");
                    /* alert(res['msg']);
                     $.ajax({
                         url: "/psychohelp/profile/access/sendmail.php",
