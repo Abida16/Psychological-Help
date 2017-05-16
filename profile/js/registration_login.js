@@ -90,7 +90,7 @@ function validate() {
                 response = xhttp.responseText
                 //var res = JSON.parse(response);
                // var flag = res['flag'];
-                if(response=="invalid")
+                if(response==2)
                 {
                     //alert(res['msg']);
                     alert("invalid email id or password");
@@ -98,7 +98,7 @@ function validate() {
 
 
                 }
-                else if(response=="verify")
+                else if(response==3)
                 {
                     //alert(res['msg']);
                     alert("Please verify your account by checking your e-mail");

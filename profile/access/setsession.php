@@ -12,5 +12,6 @@ $arr = array('flag' => 1, 'fname' =>$_GET['fname'], 'lname' => $_GET['lname'], '
 $json = json_encode($arr);
 
 echo $json;*/
+echo "success";
 
 ?>
