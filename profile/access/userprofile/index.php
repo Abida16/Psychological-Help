@@ -5,14 +5,15 @@ if(!isset( $_SESSION["state"])){
    header("Location: /psychohelp");
     exit();
    // echo "<script> window.location.replace('http://localhost:63342/psycho_help/index.html')</script>";
-    $fname = $_SESSION["fname"];
-    $lname = $_SESSION["lname"];
 
-    $email = $_SESSION["email"];
 }
 
 if($_SESSION['admin']==1)
     header("Location: /psychohelp/profile/access/adminprofile");
+$fname = $_SESSION["fname"];
+$lname = $_SESSION["lname"];
+
+$email = $_SESSION["email"];
 
 ?>
 <!DOCTYPE html>
@@ -29,7 +30,7 @@ if($_SESSION['admin']==1)
            var lname = localStorage.getItem("lname");*/
 
 
-          var fname =<?php echo $fname; ?>;
+          var fname = "<?php echo $fname ?>";
 
           var msg = "Hello " + fname;
           document.getElementById("user").innerHTML = msg;
