@@ -128,7 +128,7 @@ function validate() {
                         window.location = "/psychohelp/profile/access/adminprofile/";
 
                     else*/
-                      //  window.location = "/psychohelp/profile/access/userprofile/";
+                        window.location = "/psychohelp/profile/access/userprofile/";
                     //alert(xhttp.responseText);
 
                 }

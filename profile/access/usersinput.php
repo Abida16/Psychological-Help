@@ -30,7 +30,7 @@ if($var=="login")
             if($row["verified"]==1) {
 
                 $flag=0;
-                header("/psychohelp/profile/access/setsession.php?fname=".$row["fname"]."&lname=".$row["lname"]."&email=".$row["email"]."&admin=".$row["admin"]);
+                header("Location: /psychohelp/profile/access/setsession.php?fname=".$row["fname"]."&lname=".$row["lname"]."&email=".$row["email"]."&admin=".$row["admin"]);
 
                 break;
             }
