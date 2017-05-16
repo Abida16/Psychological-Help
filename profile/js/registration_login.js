@@ -88,17 +88,27 @@ function validate() {
             if (this.readyState == 4 && this.status == 200) {
                 // alert(xhttp.responseText);
                 response = xhttp.responseText
-                var res = JSON.parse(response);
-                var flag = res['flag'];
-                if(flag==0)
+                //var res = JSON.parse(response);
+               // var flag = res['flag'];
+                if(response=="invalid")
                 {
-                    alert(res['msg']);
+                    //alert(res['msg']);
+                    alert("invalid email id or password");
                     window.location = "/psychohelp/profile/index.php";
 
 
                 }
+                else if(response=="verify")
+                {
+                    //alert(res['msg']);
+                    alert("Please verify your account by checking your e-mail");
+                    window.location = "/psychohelp/profile/index.php";
+
+
+                }
+
                 else {
-                    var fname = res['fname'];
+                  /*  var fname = res['fname'];
                     var lname = res['lname'];
                     var admin = res['admin'];
 
@@ -112,12 +122,12 @@ function validate() {
                         type: "GET",
                         data: {"fname": fname,"lname": "lname","email":email,"admin":admin}
 
-                    });*/
+                    });
                     alert(res['msg']);
                     if(admin == 1)
                         window.location = "/psychohelp/profile/access/adminprofile/";
 
-                    else
+                    else*/
                         window.location = "/psychohelp/profile/access/userprofile/";
                     //alert(xhttp.responseText);
 

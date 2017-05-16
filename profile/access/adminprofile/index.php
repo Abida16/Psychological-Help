@@ -7,6 +7,11 @@ if(!isset( $_SESSION["state"])){
     // echo "<script> window.location.replace('http://localhost:63342/psycho_help/index.html')</script>";
 
 }
+$fname = $_SESSION["fname"];
+$lname = $_SESSION["lname"];
+
+$email = $_SESSION["email"];
+
 
 ?>
 <!DOCTYPE html>
@@ -20,9 +25,14 @@ if(!isset( $_SESSION["state"])){
 
 
 
-            var email = localStorage.getItem("email");
+         /*   var email = localStorage.getItem("email");
             var fname = localStorage.getItem("fname");
-            var lname = localStorage.getItem("lname");
+            var lname = localStorage.getItem("lname");*/
+
+            var email = <?php echo $email; ?>;
+            var fname =<?php echo $fname; ?>;
+            var lname = <?php echo $lname; ?>;
+
             var msg = "Hello " + fname;
             document.getElementById("user").innerHTML = msg;
         });

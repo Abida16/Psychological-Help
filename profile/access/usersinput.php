@@ -45,14 +45,16 @@ if($var=="login")
     if($flag!=0)
     {
         if($verify == 2 ){ //doesn't exist
-            $arr = array('flag' => 0, 'msg' => "invalid email or password");
+          //  $arr = array('flag' => 0, 'msg' => "invalid email or password");
+            echo "invalid";
 
         }
         else if($verify == 0 ) {
-            $arr=array('flag'=>0,'msg'=> "Please verify your e-mail");
+          //  $arr=array('flag'=>0,'msg'=> "Please verify your e-mail");
+            echo "verify";
         }
-        $json = json_encode($arr);
-        echo $json;
+        //$json = json_encode($arr);
+        //echo $json;
     }
 
 

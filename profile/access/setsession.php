@@ -7,10 +7,10 @@ session_start();
     $_SESSION["email"] = $_GET['email'];
     $_SESSION["admin"] = $_GET['admin'];
 
-$success="Succesfully logged in";
+/*$success="Succesfully logged in";
 $arr = array('flag' => 1, 'fname' =>$_GET['fname'], 'lname' => $_GET['lname'], 'admin' => $_GET['admin'],'msg' =>$success);
 $json = json_encode($arr);
 
-echo $json;
+echo $json;*/
 
 ?>
