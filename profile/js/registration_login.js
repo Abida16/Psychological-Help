@@ -59,7 +59,7 @@ function loadvalue() {
                     alert(res['msg']);
                     $.ajax({
                         url: "/psychohelp/profile/access/sendmail.php",
-                        type: "POST",
+                        type: "GET",
                         data: {"name": info[1],"email":info[3]},
                         success: function (feedback) {
                             consol.log(feedback);
