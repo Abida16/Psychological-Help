@@ -66,7 +66,7 @@ if(isset( $_SESSION["state"])){
           <div id="login">
               <h1>Welcome Back!</h1>
 
-              <form  id="loginform" method="post">
+              <form onsubmit="return false" id="loginform" method="post">
 
                   <div class="field-wrap">
                       <label>
