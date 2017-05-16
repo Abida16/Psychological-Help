@@ -134,8 +134,8 @@ if($var=="register")
         $flag=1;
         $arr=array('flag'=>$flag,'msg'=> $success );
         $json = json_encode($arr);
-        echo $json;
-        header("Location: /psychohelp/profile/access/sendmail.php?email=".$data[3]."&name=".$data[1]);
+       // echo $json;
+        header("Location: /psychohelp/profile/access/sendmail.php?email=".$data[3]."&name=".$data[1]."&msg=".$success);
 
     }
 

@@ -3,6 +3,7 @@
 
     $name =$_GET["name"];
     $email=  $_GET["email"];
+    $msg = $_GET["msg"];
    // echo $email." ".$name;
 //echo $email;
     require_once 'swiftmailer/lib/swift_required.php';
@@ -35,7 +36,7 @@
 
     $result = $mailer->send($message);
         if ($result)
-            echo "SUCCESS";
+            echo $msg;
         else
             echo "ERROR";
 
