@@ -132,6 +132,7 @@ if($var=="register")
 
         $success = "Thank you for your interest.A verification mail is sent to your mail account. Please verify it to login to your account";
         $flag=1;
+        echo $success;
         header("Location: /psychohelp/profile/access/sendmail.php?email=".$data[3]."&name=".$data[1]);
 
     }
