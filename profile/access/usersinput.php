@@ -130,11 +130,11 @@ if($var=="register")
     $flag=0;
     if($affected_rows) {
 
-        $success = "Thank you for your interest.A verification mail is sent to your mail account. Please verify it to login to your account";
+       /* $success = "Thank you for your interest.A verification mail is sent to your mail account. Please verify it to login to your account";
         $flag=1;
         $arr=array('flag'=>$flag,'msg'=> $success );
         $json = json_encode($arr);
-        echo $json;
+        echo $json;*/
         header("Location: /psychohelp/profile/access/sendmail.php?email=".$data[3]."&name=".$data[1]);
 
     }
