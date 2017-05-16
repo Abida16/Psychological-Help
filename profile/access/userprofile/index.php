@@ -28,9 +28,8 @@ if($_SESSION['admin']==1)
            var fname = localStorage.getItem("fname");
            var lname = localStorage.getItem("lname");*/
 
-          var email = "<?php echo $email; ?>";
-          var fname ="<?php echo $fname; ?>";
-          var lname = "<?php echo $lname; ?>";
+
+          var fname =<?php echo $fname; ?>;
 
           var msg = "Hello " + fname;
           document.getElementById("user").innerHTML = msg;

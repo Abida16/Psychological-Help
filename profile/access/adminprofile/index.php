@@ -29,9 +29,8 @@ $email = $_SESSION["email"];
             var fname = localStorage.getItem("fname");
             var lname = localStorage.getItem("lname");*/
 
-            var email = "<?php echo $email; ?>";
+
             var fname ="<?php echo $fname; ?>";
-            var lname = "<?php echo $lname; ?>";
 
             var msg = "Hello " + fname;
             document.getElementById("user").innerHTML = msg;
