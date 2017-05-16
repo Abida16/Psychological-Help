@@ -50,23 +50,14 @@ function loadvalue() {
                 {
                     // alert(res['msg']);
                     alert("registration failed. register with new email id");
-                   // window.location = "/psychohelp/profile/index.php";
+                    window.location = "/psychohelp/profile/index.php";
 
 
                 }
                 else
                 {
                     alert( "Thank you for your interest.A verification mail is sent to your mail account. Please verify it to login to your account");
-                   /* alert(res['msg']);
-                    $.ajax({
-                        url: "/psychohelp/profile/access/sendmail.php",
-                        type: "GET",
-                        data: {"name": info[1],"email":info[3]},
-                        success: function (feedback) {
-                            consol.log(feedback);
-                        }
 
-                    });*/
                 }
 
 
