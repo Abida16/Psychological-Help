@@ -107,12 +107,12 @@ function validate() {
                     localStorage.setItem("email",email);
                     localStorage.setItem("lname",lname);
                     localStorage.setItem("fname",fname);
-                    $.ajax({
+                   /* $.ajax({
                         url: "/psychohelp/profile/access/setsession.php",
                         type: "GET",
                         data: {"fname": fname,"lname": "lname","email":email,"admin":admin}
 
-                    });
+                    });*/
                     alert(res['msg']);
                     if(admin == 1)
                         window.location = "/psychohelp/profile/access/adminprofile/";

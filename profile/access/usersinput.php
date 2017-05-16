@@ -13,7 +13,7 @@ if($var=="login")
     $password = $_GET["pass"] ;
 
 
-    $sucess="Succesfully logged in";
+
     $fail = "invalid email id or password";
 
 
@@ -28,13 +28,10 @@ if($var=="login")
         if($row["email"]==$email && $row["password"]==$password)
         {
             if($row["verified"]==1) {
-                $flag = 1;
 
 
-                $arr = array('flag' => 1, 'fname' => $row["fname"], 'lname' => $row["lname"], 'admin' => $row["admin"],'msg' =>$sucess);
-                $json = json_encode($arr);
-                echo $json;
-                //echo $sucess;
+                header("/psychohelp/profile/access/setsession.php?fname=".$row["fname"]."&lname=".$row["lname"]."&email=".$row["email"]."&admin=".$row["admin"]);
+
                 break;
             }
             else{ //not verified
