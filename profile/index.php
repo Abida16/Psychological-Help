@@ -93,7 +93,7 @@ if(isset( $_SESSION["state"])){
 	
           <h1>Please Register if you don't have an account</h1>
           
-          <form id="myform" >
+          <form onsubmit="return false" id="myform"  >
           
           <div class="top-row">
             <div class="field-wrap">
