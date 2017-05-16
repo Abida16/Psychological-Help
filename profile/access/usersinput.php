@@ -142,13 +142,16 @@ if($var=="register")
     else {
         $flag=0;
         $success = "registration failed. register with new email id";
+        $arr=array('flag'=>$flag,'msg'=> $success );
+        $json = json_encode($arr);
+        echo $json;
     }
 
 
 
-    $arr=array('flag'=>$flag,'msg'=> $success );
+ /*   $arr=array('flag'=>$flag,'msg'=> $success );
     $json = json_encode($arr);
-    echo $json;
+    echo $json;*/
 
 
 
