@@ -13,6 +13,8 @@
  *
  * @author Chris Corbyn
  */
+//date_default_timezone_set('Asia/Dhaka');
+
 class Swift_Mime_Headers_DateHeader extends Swift_Mime_Headers_AbstractHeader
 {
     /**
@@ -20,6 +22,7 @@ class Swift_Mime_Headers_DateHeader extends Swift_Mime_Headers_AbstractHeader
      *
      * @var int
      */
+
     private $_timestamp;
 
     /**
