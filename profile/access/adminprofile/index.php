@@ -86,7 +86,7 @@ $email = $_SESSION["email"];
             <h1>You are the admin</h1>
         </div>
         <div class="w3-padding-10">
-            <a href="/psychohelp/profile/easyappointments/" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">View yours appointment</a>
+            <a href="/psychohelp/profile/easyappointments/" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">View your appointments</a>
             <a href="/psychohelp/chat" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Start Chat</a>
             <a href="/psychohelp/profile/quiz/quiz.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Set quiz</a>
             <a href="/psychohelp/profile/selfhelp/" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">View Self help Section</a>
