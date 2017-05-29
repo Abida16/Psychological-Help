@@ -120,17 +120,18 @@
                   </ul>
                 </li>-->
                 <li><a href="ps-contact">Contact</a></li>
-                <?php
-                    $user;
+                  <?php
+                  $user;
 
-                    if(!isset( $_SESSION["state"])){
-                        $user = "<a href='profile'><strong>Login</strong></a>";
-                    }
-                    else{
+                  if(!isset( $_SESSION["state"])){
+                      $user = "<a href='profile'><strong>Login</strong></a>";
+                  }
+                  else{
 
-                        $user = "<a href='profile' style='color: #00CC00;'><strong>".$_SESSION["fname"]."</strong></a>";
-                    }
-                ?>
+                      $user = "<a href='profile' style='color: #00CC00;'><strong>".$_SESSION["fname"]."</strong></a>";
+                  }
+                  ?>
+                  <li><?php echo $user ?></li>
 
               </ul>           
             </div><!--/.nav-collapse -->
