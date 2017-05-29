@@ -386,7 +386,7 @@
                       <div class="service-icon">
                         <span class="fa fa-angle-double-down service-icon-effect"></span>
                       </div>
-                      <h3><a href="#">Online Assessment</a></h3>
+                      <h3><a href="ps-assessment">Online Assessment</a></h3>
                       <p>To know your mental status, take our online Assessment Service</p>
                     </div>
                   </div>
