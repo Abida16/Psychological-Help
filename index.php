@@ -396,8 +396,8 @@
                       <div class="service-icon">
                         <span class="fa fa-angle-double-down service-icon-effect"></span>
                       </div>
-                      <h3><a href="#">Online Counselling</a></h3>
-                      <p>Talk with a licensed, professional therapist online.</p>
+                      <h3><a href="profile">Online Counselling</a></h3>
+                      <p>Talk with a licensed, professional therapist online.Please register to get the service</p>
                     </div>
                   </div>
                   <!-- Start Single Service -->
