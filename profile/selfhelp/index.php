@@ -660,7 +660,7 @@ else $profile = "userprofile";
                         },
                         success: function (feedback) {
                             alert(feedback);
-                           window.location = "/profile/selfhelp/index.php";
+                           window.location = "/psychohelp/profile/selfhelp/";
 
                         }
 
