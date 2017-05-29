@@ -131,7 +131,7 @@
                         $user = "<a href='profile' style='color: #00CC00;'><strong>".$_SESSION["fname"]."</strong></a>";
                     }
                 ?>
-                
+
               </ul>           
             </div><!--/.nav-collapse -->
           </div>     
@@ -405,8 +405,8 @@
                       <div class="service-icon">
                         <span class="fa fa-angle-double-down service-icon-effect"></span>
                       </div>
-                      <h3><a href="#">Self Help</a></h3>
-                      <p>To improve your mental health by yourself, SelfHelp section will be your guidlines. নিজেকে নিজে সাহায্য করুন। </p>
+                      <h3><a href="profile">Self Help</a></h3>
+                      <p>To improve your mental health by yourself, SelfHelp section will be your guidlines. নিজেকে নিজে সাহায্য করুন। এই সার্ভিসটির জন্যে রেজিস্ট্রেশন করুন।  </p>
                     </div>
                   </div>
 
